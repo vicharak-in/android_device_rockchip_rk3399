@@ -30,9 +30,6 @@ on boot
     write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
 
 on init
-    # Load persistent dm-verity state
-    verity_load_state
-
     chown root root /sys/class/devfreq/dmc/system_status
     chmod 0666 /sys/class/devfreq/dmc/system_status
     
