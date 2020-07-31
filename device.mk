@@ -117,17 +117,6 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 
 $(call inherit-product-if-exists, vendor/rockchip/rk3399/device-vendor.mk)
 
-#for enable optee support
-ifeq ($(strip $(PRODUCT_HAVE_OPTEE)),true)
-#Choose TEE storage type
-#auto (storage type decide by storage chip emmc:rpmb nand:rkss)
-#rpmb
-#rkss
-PRODUCT_PROPERTY_OVERRIDES += ro.tee.storage=rkss
-PRODUCT_COPY_FILES += \
-       device/rockchip/common/init.optee_verify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.optee.rc
-endif
-
 PRODUCT_COPY_FILES += \
     device/rockchip/rk3399/public.libraries.txt:vendor/etc/public.libraries.txt
 
