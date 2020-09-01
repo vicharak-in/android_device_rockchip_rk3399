@@ -14,6 +14,7 @@ PRODUCT_KERNEL_DTS := rk3399-evb-ind-lpddr4-android-avb
 
 # AB image definition
 BOARD_USES_AB_IMAGE := false
+BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 BOARD_HAS_RK_4G_MODEM := false
 
 PRODUCT_HAVE_OPTEE := false
