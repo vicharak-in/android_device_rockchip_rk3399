@@ -20,8 +20,8 @@ PRODUCT_FSTAB_TEMPLATE := $(LOCAL_PATH)/fstab.in
 PRODUCT_DTBO_TEMPLATE := $(LOCAL_PATH)/dt-overlay.in
 PRODUCT_BOOT_DEVICE := fe330000.sdhci
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3399/rk3399_Android10/BoardConfig.mk
+include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/rockchip/rk3399/device.mk)

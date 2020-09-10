@@ -21,8 +21,8 @@ PRODUCT_BOOT_DEVICE := fe330000.sdhci
 
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 include device/rockchip/common/build/rockchip/DynamicPartitions.mk
-include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3399/rk3399_atv/BoardConfig.mk
+include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk3399/rk3399_atv/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)

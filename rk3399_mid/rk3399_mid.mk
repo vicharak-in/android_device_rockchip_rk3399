@@ -27,8 +27,8 @@ ifeq ($(strip $(BOARD_USES_AB_LEGACY_RETROFIT)), true)
     include device/rockchip/common/BoardConfig_AB_retrofit.mk
 endif
 
-include device/rockchip/common/BoardConfig.mk
 include device/rockchip/rk3399/rk3399_mid/BoardConfig.mk
+include device/rockchip/common/BoardConfig.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/rockchip/rk3399/rk3399_mid/device.mk)
