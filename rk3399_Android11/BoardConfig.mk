@@ -17,6 +17,7 @@ BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 BOARD_HAS_RK_4G_MODEM := false
 
+PRODUCT_HAVE_OPTEE := false
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk
     TARGET_RECOVERY_FSTAB := device/rockchip/rk3399/rk3399_Android11/recovery.fstab_AB
