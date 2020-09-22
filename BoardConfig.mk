@@ -135,3 +135,7 @@ BOARD_SHOW_HDMI_SETTING := true
 
 # for ethernet
 BOARD_HS_ETHERNET := true
+
+# for dynamaic afbc target 
+BOARD_HS_DYNAMIC_AFBC_TARGET := true
+
