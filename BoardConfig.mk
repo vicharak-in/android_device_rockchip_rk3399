@@ -42,7 +42,7 @@ PRODUCT_UBOOT_CONFIG ?= rk3399
 SF_PRIMARY_DISPLAY_ORIENTATION := 0
 
 BOARD_AVB_ENABLE := false
-
+BOARD_MEMTRACK_SUPPORT := true
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
 BUILD_EMULATOR := false
 
