@@ -138,4 +138,4 @@ BOARD_HS_ETHERNET := true
 
 # for dynamaic afbc target 
 BOARD_HS_DYNAMIC_AFBC_TARGET := false
-
+TARGET_RK_GRALLOC_VERSION := 1
