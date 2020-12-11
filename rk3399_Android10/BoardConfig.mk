@@ -10,6 +10,8 @@ CAMERA_SUPPORT_AUTOFOCUS:= false
 
 # AB image definition
 BOARD_USES_AB_IMAGE := false
+BOARD_USES_VIRTUAL_AB_RETROFIT := false
+
 BOARD_HAS_RK_4G_MODEM := true
 ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     include device/rockchip/common/BoardConfig_AB.mk

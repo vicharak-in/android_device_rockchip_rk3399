@@ -5,10 +5,12 @@ BOARD_SENSOR_MPU_PAD := false
 BUILD_WITH_GOOGLE_GMS_EXPRESS := false
 CAMERA_SUPPORT_AUTOFOCUS:= false
 
+BOARD_BOOT_HEADER_VERSION := 1
 # AB image definition
 BOARD_USES_AB_IMAGE := false
 
 ifneq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+    BOARD_RECOVERY_MKBOOTIMG_ARGS := --second $(TARGET_PREBUILT_RESOURCE) --header_version 1
     # Android Q use odm instead of oem, but for upgrading to Q, partation list cant be changed, odm will mount at /dev/block/by-name/oem
     BOARD_ODMIMAGE_PARTITION_SIZE := $(shell python device/rockchip/common/get_partition_size.py device/rockchip/rk3399/rk3399_mid/parameter.txt oem)
 endif
