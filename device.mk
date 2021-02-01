@@ -23,6 +23,8 @@ PRODUCT_PACKAGES += \
     displayd \
     libion
 
+BOARD_SEPOLICY_DIRS += device/rockchip/rk3399/sepolicy_vendor
+
 #enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
