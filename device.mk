@@ -22,6 +22,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     displayd \
     libion
+PRODUCT_PACKAGES += \
+    RockchipPinnerServiceArm64
 
 BOARD_SEPOLICY_DIRS += device/rockchip/rk3399/sepolicy_vendor
 
