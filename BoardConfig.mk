@@ -33,8 +33,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a15
 
 PRODUCT_KERNEL_ARCH := arm64
-TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
-BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
 PRODUCT_KERNEL_DTS ?= rk3399-sapphire-excavator-edp-avb
 PRODUCT_KERNEL_CONFIG ?= rockchip_defconfig
 PRODUCT_UBOOT_CONFIG ?= rk3399
