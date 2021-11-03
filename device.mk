@@ -13,6 +13,9 @@
 # limitations under the License.
 #
 
+# Set system properties identifying the chipset
+PRODUCT_VENDOR_PROPERTIES += ro.soc.model=RK3399
+
 PRODUCT_PACKAGES += \
     WallpaperPicker \
     Launcher3 \
