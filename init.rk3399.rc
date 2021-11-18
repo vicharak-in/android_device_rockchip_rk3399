@@ -8,6 +8,12 @@ on property:sys.boot_completed=1
     chown root system /sys/class/devfreq/dmc/governor
     chmod 0664 /sys/class/devfreq/dmc/governor
 
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 0
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 0
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor interactive
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor interactive
+    write /sys/class/devfreq/dmc/governor dmc_ondemand
+
 on early-boot
     # Update dm-verity state and set partition.*.verified properties
     verity_update_state
@@ -39,3 +45,7 @@ on post-fs-data
     chown root system /sys/class/graphics/fb0/cabc
     chmod 0664 /sys/class/graphics/fb0/cabc
 
+on early-init
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
+    write /sys/class/devfreq/dmc/governor performance
