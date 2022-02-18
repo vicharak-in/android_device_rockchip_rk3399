@@ -18,8 +18,11 @@ PRODUCT_VENDOR_PROPERTIES += ro.soc.model=RK3399
 
 PRODUCT_PACKAGES += \
     WallpaperPicker \
-    Launcher3 \
-    libcrypto_vendor.vendor
+    Launcher3
+
+PRODUCT_PACKAGES += \
+    libcrypto_vendor.vendor \
+    librockchipxxx
 
 #$_rbox_$_modify_$_zhengyang: add displayd
 PRODUCT_PACKAGES += \
