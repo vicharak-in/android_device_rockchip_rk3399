@@ -45,4 +45,4 @@ PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/spn-conf.xml:system/etc/s
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = 192.168.1.1:8888 \
-    ro.sf.lcd_density=280
+    ro.sf.lcd_density=240
