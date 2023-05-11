@@ -20,6 +20,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/rk3399_Android10/rk3399_Android10.mk \
     $(LOCAL_DIR)/rk3399_Android11/rk3399_Android11.mk \
     $(LOCAL_DIR)/rk3399_Android12/rk3399_Android12.mk \
+    $(LOCAL_DIR)/vaaman/vaaman.mk
 
 COMMON_LUNCH_CHOICES := \
     rk3399_mid-userdebug \
@@ -30,3 +31,5 @@ COMMON_LUNCH_CHOICES := \
     rk3399_Android11-user \
     rk3399_Android12-userdebug \
     rk3399_Android12-user \
+    vaaman-userdebug \
+    vaaman-user
