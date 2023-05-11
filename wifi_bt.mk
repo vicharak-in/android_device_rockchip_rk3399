@@ -12,20 +12,20 @@
 #           ap6xxx_nfc,      #like ap6441 & ap6493
 #
 # for mtk wifi, bt
-# MediaTek: 
+# MediaTek:
 #           combo_mt66xx,
-#           mt5931_6622,   
+#           mt5931_6622,
 #
 # for realtek wifi, bt & rda587x bt
-# RealTek:    
-#         
+# RealTek:
+#
 #           rtl81xx,         #only wifi
 #           rtl8723as,       #like  rtl8723as sdio
 #           rtl8723bs,       #like  rtl8723bs sdio
 #           rtl8723au,       #like  rtl8723au usb
 #           rtl8723bu,       #like  rtl8723bu usb
 #           rda587x,         #like  rtl8188+rda587x
-#           mt6622,          #like  rtl8188+mt6622 
+#           mt6622,          #like  rtl8188+mt6622
 #
 # for Espressif wifi & Beken bt
 # Espressif:
@@ -37,7 +37,7 @@
 # MediaTek_mt7601:
 #	    mt7601           #only wifi
 #           rda587x,         #like  rtl8188+rda587x
-#           mt6622,          #like  rtl8188+mt6622 
+#           mt6622,          #like  rtl8188+mt6622
 #
-BOARD_CONNECTIVITY_VENDOR := Broadcom
-BOARD_CONNECTIVITY_MODULE := ap6xxx
+BOARD_CONNECTIVITY_VENDOR := Realtek
+BOARD_CONNECTIVITY_MODULE := rtl8822cs
