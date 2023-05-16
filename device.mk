@@ -129,6 +129,10 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 
 $(call inherit-product-if-exists, vendor/rockchip/rk3399/device-vendor.mk)
 
+ifeq ($(BOARD_WITH_GAPPS_GO), true)
+$(call inherit-product-if-exists, vendor/gapps-go/gapps-go.mk)
+endif
+
 PRODUCT_COPY_FILES += \
     device/rockchip/rk3399/public.libraries.txt:vendor/etc/public.libraries.txt
 
