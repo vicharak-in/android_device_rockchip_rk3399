@@ -12,7 +12,7 @@ BOARD_CAMERA_SUPPORT := true
 BOARD_CAMERA_SUPPORT_EXT := true
 PRODUCT_KERNEL_DTS := rk3399-vaaman-android
 PRODUCT_UBOOT_CONFIG := rk3399-vaaman-android
-PRODUCT_KERNEL_CONFIG := rockchip_defconfig rk3399_vaaman.config
+PRODUCT_KERNEL_CONFIG := rockchip_defconfig rk3399_vaaman.config android-11.config
 PRODUCT_KERNEL_VERSION := 4.19
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 
