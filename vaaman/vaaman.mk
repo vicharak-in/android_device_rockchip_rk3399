@@ -33,7 +33,7 @@ PRODUCT_DEVICE := vaaman
 PRODUCT_BRAND := vicharak
 PRODUCT_MODEL := vaaman
 PRODUCT_MANUFACTURER := vicharak
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES += \
     SoundRecorder
