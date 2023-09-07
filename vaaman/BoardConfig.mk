@@ -16,6 +16,8 @@ PRODUCT_KERNEL_CONFIG := rockchip_defconfig rk3399_vaaman.config android-11.conf
 PRODUCT_KERNEL_VERSION := 4.19
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/rockchip/rk3399/vaaman/bluetooth
+
 # AB image definition
 BOARD_USES_AB_IMAGE := false
 BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
